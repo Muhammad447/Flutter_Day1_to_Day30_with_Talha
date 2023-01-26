@@ -13,8 +13,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       themeMode: ThemeMode.light,
-      theme: ThemeData(primarySwatch: Colors.orange),//primarySwatch means to adjust this color with everything like button,text etc. 
-      darkTheme: ThemeData(brightness: Brightness.dark),
+      theme: ThemeData(
+        primarySwatch: Colors.orange),//primarySwatch means to adjust this color with everything like button,text etc. 
+      darkTheme: ThemeData
+      (brightness: Brightness.dark),
       initialRoute: "/login",
       routes: { 
         "/":(context)=> LoginPage(),
